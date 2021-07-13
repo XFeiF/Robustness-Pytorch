@@ -14,7 +14,7 @@ Implementation of "Improving robustness of medical image diagnosis with denoisin
 ├── sk_g_test.sh            
 └── src                     
     ├── __init__.py
-    ├── action.py           # operations used by the model
+    ├── action.py          
     ├── agent.py            
     ├── attack.py           
     ├── config.py           
@@ -42,20 +42,27 @@ It is a utils combination mainly used to generate parser. But you can put any me
 It is the **core** of the framework as it provides `args` to other modules. We use `args` to control almost all parameters.
 
 ## Basic Usage
-`main.py`  
-```python main.py test --n_dl 16 --dsid skin4 --mid res50 --midtf skin4_res50_g --batch_attack 64 --testidtf skin4_res18_b_eval_FGSM_e4```
+```
+python main.py test --n_dl 16 --dsid skin4 --mid res50 --midtf skin4_res50_g --batch_attack 64 --testidtf skin4_res18_b_eval_FGSM_e4
+```
+
+
 
 
 ----
 
 ## Cite
 
-`@inproceedings{xue2019robust,
+```
+@inproceedings{xue2019robust,
   title={Improving robustness of medical image diagnosis with denoising convolutional neural networks},
   author={Xue, Fei-Fei and Peng, Jin and Wang, Ruixuan and Zhang, Qiong and Zheng, Wei-Shi},
   booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
   pages={846--854},
   year={2019},
   organization={Springer}
-}`
+}
+```
+
+
 
